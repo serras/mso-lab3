@@ -80,7 +80,7 @@ namespace Lab3
 			case UIPayment.Cash:
 				IKEAMyntAtare2000 coin = new IKEAMyntAtare2000 ();
 				coin.starta ();
-				coin.betala ((int)(price * 100));
+				coin.betala ((int) Math.Round(price * 100));
 				coin.stoppa ();
 				break;
 			}
@@ -92,8 +92,8 @@ namespace Lab3
 			// Set label
 			this.Text = "MSO Lab Exercise III";
 			// this.FormBorderStyle = FormBorderStyle.FixedSingle;
-			this.Width = 420;
-			this.Height = 200;
+			this.Width = 500;
+			this.Height = 210;
 			// Set layout
 			var grid = new TableLayoutPanel ();
 			grid.Dock = DockStyle.Fill;
